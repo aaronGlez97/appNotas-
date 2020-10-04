@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppLogin</title>
+  {% load bootstrap4 %}
+
+  {# CSS Bootstrap #}
+  {% bootstrap_css %}
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: darkcyan;">
+    <a class="navbar-brand" href="/">AppLogin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href=""><span class="sr-only">(current)</span></a>
+
+
+
+
+
+
+
+
+
+
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+
+        <a class="nav-item nav-link active " href="">Iniciar sesion </a>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+
+  <div class="container rounded" style="background-color: lightseagreen">
+
+
+
+    <h4 class="">Iniciar sesion </h4>
+
+    <form method="POST">
+
+      {{form.as_p}}
+      {% csrf_token %}
+
+
+
+      <button type="submit"> Iniciar sesion </button>
+    </form>
+
+    <br>
+
+    <a class="text-white" href="/register">Registrarse</a>
+  </div>
+
+
+
+  {% bootstrap_javascript jquery='full '%}
+
+</body>
+
+</html>
